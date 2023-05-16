@@ -6,7 +6,7 @@ const Header = () => {
   const [connected, setConnected] = useState(false);
 
   const handleConnect = async () => {
-    if (window.ethereum && window.ethereum.selectedAddress) {
+    if (window.ethereum.selectedAddress) {
       console.log("Disconnection can be done manually...");
       alert(
         'Please disconnect your MetaMask account manually by clicking on the MetaMask extension icon and selecting "Disconnect" from the dropdown menu.'
